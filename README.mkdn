@@ -1,0 +1,40 @@
+# NAME
+
+do - Objectify Perl 5 Native Data Types
+
+# VERSION
+
+version 0.01
+
+# STATUS
+
+<a href="https://travis-ci.org/alnewkirk/do"><img src="https://travis-ci.org/alnewkirk/do.svg?branch=master"></a>
+
+# SYNOPSIS
+
+    use do;
+
+    my $input  = [1,1,1,1,3,3,2,1,5,6,7,8,9];
+    my $output = $input->grep('$a < 5')->unique->sort; # [1,2,3]
+
+    $output->isa('Data::Object::Array');
+    $output->join(', '); # 1,2,3
+
+# DESCRIPTION
+
+This module is a _shoehorn_ for [Data::Object::Autobox](http://search.cpan.org/perldoc?Data::Object::Autobox), a Perl 5 autobox
+implementation based upon the [Data::Object](http://search.cpan.org/perldoc?Data::Object) data type object system. This
+pragma merely serves as a convenient means of loading and configuring
+Data::Object and autoboxing. __Note: This is an early release available for
+testing and feedback and as such is subject to change.__
+
+# AUTHOR
+
+Al Newkirk <anewkirk@ana.io>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by Al Newkirk.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
