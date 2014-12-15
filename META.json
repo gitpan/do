@@ -1,0 +1,50 @@
+{
+   "abstract" : "Objectify Perl 5 Native Data Types",
+   "author" : [
+      "Al Newkirk <anewkirk@ana.io>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.025, CPAN::Meta::Converter version 2.142690",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "do",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Data::Object" : "0.06",
+            "Data::Object::Autobox" : "0.04",
+            "Import::Into" : "1.002004",
+            "perl" : "v5.10.0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "perl" : "v5.10.0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/alnewkirk/do/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/alnewkirk/do.git",
+         "web" : "https://github.com/alnewkirk/do"
+      }
+   },
+   "version" : "0.02",
+   "x_authority" : "cpan:AWNCORP"
+}
+

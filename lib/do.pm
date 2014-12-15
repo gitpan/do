@@ -9,7 +9,7 @@ use Data::Object;
 use Data::Object::Autobox;
 use Import::Into;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 sub import {
     my $target = caller;
@@ -32,7 +32,7 @@ do - Objectify Perl 5 Native Data Types
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

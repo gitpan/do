@@ -1,5 +1,9 @@
 Changelog for do
 
-0.01 2014-12-14T02:37:58
+0.02 2014-12-15T12:22:38
+ - Added META file to dist.
+
+0.01 2014-12-14T02:38:14
+ - v0.01
  - Initial commit.
 

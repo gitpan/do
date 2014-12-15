@@ -4,7 +4,7 @@ do - Objectify Perl 5 Native Data Types
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # STATUS
 
