@@ -9,11 +9,11 @@ use Data::Object;
 use Data::Object::Autobox;
 use Import::Into;
 
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 sub import {
     my $target = caller;
-    Data::Object::Autobox->import::into($target);
+    Data::Object::Autobox->import::into($target, -autoload);
     Data::Object->import::into($target, qw(deduce deduce_deep));
     return;
 }
@@ -32,7 +32,7 @@ do - Objectify Perl 5 Native Data Types
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -42,7 +42,7 @@ version 0.02
     my $output = $input->grep('$a < 5')->unique->sort; # [1,2,3]
 
     $output->isa('Data::Object::Array');
-    $output->join(', '); # 1,2,3
+    $output->join(',')->print; # 1,2,3
 
 =head1 DESCRIPTION
 

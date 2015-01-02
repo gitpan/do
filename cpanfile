@@ -1,5 +1,5 @@
-requires "Data::Object" => "0.06";
-requires "Data::Object::Autobox" => "0.04";
+requires "Data::Object" => "0.11";
+requires "Data::Object::Autobox" => "0.07";
 requires "Import::Into" => "1.002004";
 requires "perl" => "v5.10.0";
 

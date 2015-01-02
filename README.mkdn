@@ -4,7 +4,7 @@ do - Objectify Perl 5 Native Data Types
 
 # VERSION
 
-version 0.02
+version 0.03
 
 # STATUS
 
@@ -18,15 +18,15 @@ version 0.02
     my $output = $input->grep('$a < 5')->unique->sort; # [1,2,3]
 
     $output->isa('Data::Object::Array');
-    $output->join(', '); # 1,2,3
+    $output->join(',')->print; # 1,2,3
 
 # DESCRIPTION
 
-This module is a _shoehorn_ for [Data::Object::Autobox](http://search.cpan.org/perldoc?Data::Object::Autobox), a Perl 5 autobox
-implementation based upon the [Data::Object](http://search.cpan.org/perldoc?Data::Object) data type object system. This
+This module is a _shoehorn_ for [Data::Object::Autobox](https://metacpan.org/pod/Data::Object::Autobox), a Perl 5 autobox
+implementation based upon the [Data::Object](https://metacpan.org/pod/Data::Object) data type object system. This
 pragma merely serves as a convenient means of loading and configuring
-Data::Object and autoboxing. __Note: This is an early release available for
-testing and feedback and as such is subject to change.__
+Data::Object and autoboxing. **Note: This is an early release available for
+testing and feedback and as such is subject to change.**
 
 # AUTHOR
 
